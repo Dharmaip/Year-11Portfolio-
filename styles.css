@@ -1,3 +1,7 @@
+body{
+    background: linear-gradient(to bottom, white 80%, rgb(2, 2, 61) 20%); /* Split colors */
+    height: 100vh;
+}
 h1{
     font-family: poppins;
 }
@@ -63,9 +67,54 @@ main {
     right: 100px;
     left: 400px;
     transform: translateY(-50%);
-    top: 50%;
+    bottom: 200px;
     width: 2px;
-    height: 500px;
+    height: 300px;
     background-color: #00000038;
 
+}
+
+.box3{
+    background-color: #007ce2;
+    margin-left: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    height: 100px;
+    position: relative;
+    bottom: 83px;
+    left: 1000px;
+    p{
+        font-size: large;
+        align-self: center;
+        color: white;
+    }
+    padding: 10px;
+    cursor: pointer;
+}
+nav{
+    display: fixed;
+    background-color: #021f36;
+    position: sticky;
+
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 20px;
+    gap: 50px;
+    
+}
+nav ul li{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    cursor: pointer;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
 }
