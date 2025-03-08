@@ -26,25 +26,27 @@ main {
     top: 100px;
     
 }
+
+.boxes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+    top: 8rem;
+
+}
 .box1{
     background-color: #437197;
-    margin-left: 100px;
     border-radius: 10px;
     box-shadow: 0px 0px 7px rgba(0,0,0,0.5);
     display: flex;
     justify-content: center;
-    width: 10%;
+    width: 150px;
     height: 100px;
-    position: relative;
-    top: 9rem;
-    left: 10rem;
-    p{
-        font-size: large;
-        align-self: center;
-        color: white;
-    }
     padding: 10px;
     cursor: pointer;
+    margin: 10px;
 }
 
 .box1 a{
@@ -53,6 +55,7 @@ main {
     justify-content: center;
     display: flex;
 }
+
 .box1:hover{
     background-color: #014480;
 }
@@ -63,31 +66,15 @@ main {
     box-shadow: 0px 0px 7px rgba(0,0,0,0.5);
     display: flex;
     justify-content: center;
-    width: min(150px, 90%);
+    width: 150px;
     height: 100px;
-    position: relative;
-    bottom: 1rem;
-    left: 40%;
-    transform: translateX(-50%);
-    margin-top: 20px;
-    p{
-        font-size: clamp(1rem, 2vw, 1.2rem);
-        align-self: center;
-        color: white;
-    }
     padding: 10px;
     cursor: pointer;
+    margin: 10px;
+}
 
-    @media (max-width: 768px) {
-        left: 50%;
-        width: min(150px, 80%);
-        margin: 20px auto;
-    }
-
-    @media (max-width: 480px) {
-        width: min(150px, 70%);
-        height: 80px;
-    }
+.box2:hover{
+    background-color: #014480;
 }
 
 .box3{
@@ -98,19 +85,22 @@ main {
     justify-content: center;
     width: 150px;
     height: 100px;
-    position: relative;
-    bottom: 3.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 20px;
-    p{
-        font-size: large;
-        align-self: center;
-        color: white;
-    }
     padding: 10px;
     cursor: pointer;
+    margin: 10px;
 }
+
+.box3:hover{
+    background-color: #014480;
+}
+
+.box1 p, .box2 p, .box3 p {
+    font-size: large;
+    align-self: center;
+    color: white;
+    text-decoration: none;
+}
+
 nav{
     display: fixed;
     background-color: #021f36;
@@ -157,7 +147,6 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    z-index: 1000;
     box-shadow: 0px -7px 18px 2px rgba(161,161,161,0.81);
 }
 
