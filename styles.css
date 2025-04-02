@@ -248,7 +248,7 @@ h1{
     margin-bottom: 5px;
     margin-right: -50px;
     margin-left: 40px;
-    width: 100%;
+    width: fit-content;
     max-width: 400px; 
     height: auto; 
     border-radius: 8px; 
@@ -257,9 +257,11 @@ h1{
 }
 
 #backP{
-    height: 600px;
+    height: 750px;
+    
 }
 
 li{
     color: rgb(90, 90, 90);
+    line-height: 1.5;
 }
