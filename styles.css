@@ -147,13 +147,13 @@ nav ul :hover{
     box-shadow: 
         0 2px 4px rgba(0, 0, 0, 0.1), 
         0 8px 16px rgba(0, 0, 0, 0.1);
-    transform: translatey(4rem);
+    transform: translatey(2rem);
     margin-left: 20rem;
     margin-right: 20rem;
     height: 30rem;
     border-radius: 10px;
     cursor: pointer;
-    object-fit: cover; 
+    object-fit: cover;
     
 }
 
